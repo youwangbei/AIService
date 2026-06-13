@@ -3,7 +3,7 @@ Please visit the address below to view the latest updates:
 [Click here to access the project](https://gitee.com/youwangbei/aiserver)
 <div align="center">
 
-**基于 C++ 的高性能全栈 AI 服务平台**
+**基于 C++ 17的高性能全栈 AI 服务平台**
 
 [![C++17](https://img.shields.io/badge/C%2B%2B-17-blue)](https://en.cppreference.com/w/cpp/17)
 [![muduo](https://img.shields.io/badge/Network-muduo-orange)](https://github.com/chenshuo/muduo)
