@@ -1,0 +1,6 @@
+# TTS 服务依赖
+flask>=2.0.0
+gtts>=2.2.0
+edge-tts>=6.0.0
+pyttsx3>=2.90
+TTS>=0.13.0

@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+package rag;
+
+option java_multiple_files = true;
+option java_package = "com.example.rag";
+option java_outer_classname = "RAGServiceProto";
+option objc_class_prefix = "RAG";
+
+service RAGService {
+  rpc Query(QueryRequest) returns (QueryResponse);
+  rpc AddDocument(AddDocumentRequest) returns (CommonResponse);
+  rpc Count(CountRequest) returns (CountResponse);
+  rpc Clear(ClearRequest) returns (CommonResponse);
+}
+
+message QueryRequest {
+  string query = 1;
+  int32 top_k = 2;
+}
+
+message QueryResponse {
+  string status = 1;
+  repeated string documents = 2;
+  repeated string sources = 3;
+  repeated double scores = 4;
+  string message = 5;
+}
+
+message AddDocumentRequest {
+  string content = 1;
+  string doc_id = 2;
+}
+
+message CountRequest {}
+
+message CountResponse {
+  string status = 1;
+  int32 count = 2;
+  string message = 3;
+}
+
+message ClearRequest {}
+
+message CommonResponse {
+  string status = 1;
+  string message = 2;
+}

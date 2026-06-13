@@ -1,0 +1,24 @@
+{
+  "prompt_template": "{user_input}",
+  "tools": [
+    {
+      "name": "get_weather",
+      "params": {
+        "city": "北京"
+      },
+      "desc": "获取天气"
+    },
+    {
+      "name": "get_time",
+      "params": {},
+      "desc": "获取当前时间"
+    },
+    {
+      "name": "query_rag",
+      "params": {
+        "query": "用户的问题"
+      },
+      "desc": "查询知识库，获取与问题相关的参考资料"
+    }
+  ]
+}
