@@ -1,5 +1,5 @@
 # AIService - 企业级AI智能助手平台
-Please visit the address below to view the project:
+Please visit the address below to view the latest updates:
 [Click here to access the project](https://gitee.com/youwangbei/aiserver)
 <div align="center">
 
